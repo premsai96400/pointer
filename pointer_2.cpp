@@ -1,17 +1,15 @@
-#include <iostream> 
 using namespace std; 
-
-void swap(int* x, int* y) 
-{ 
-	int temp = *x; 
-	*x = *y; 
-	*y = temp; 
-} 
-
+  
 int main() 
 { 
-	int x = 10, y = 20; 
-	swap(&x, &y); 
-	cout << x << " " << y << endl; 
-	return 0; 
+    int a = 10; 
+    int b = 20; 
+    cout << "Value of a before: " << a << endl; 
+    cout << "Value of b before: " << b << endl; 
+  
+    // swap values of the variables 
+    swap(a, b); 
+    cout << "Value of a now: " << a << endl; 
+    cout << "Value of b now: " << b << endl; 
+    return 0; 
 } 
